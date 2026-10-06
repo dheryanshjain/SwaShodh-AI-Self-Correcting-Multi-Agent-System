@@ -216,3 +216,8 @@ def run_demo(topic: str):
     print(f"Revisions used: {result['revision_count']}")
 
 
+if __name__ == "__main__":
+    topic = input("Enter a topic (example: What is an AI agent?): ").strip()
+    if not topic:
+        topic = "What is an AI agent?"
+    run_demo(topic)
